@@ -15,6 +15,11 @@
     "build": "microbundle --jsx react",
     "prepublishOnly": "yarn run build"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "*.{js,ts,tsx,css,json,md,mdx}": [
       "prettier --write",
