@@ -24,6 +24,11 @@ There are three steps to use your local version of `@nice-boys/components` in an
 
 That's it!
 
+| @nice-boys/components | yourapp                         |
+| --------------------- | ------------------------------- |
+| yarn link             | yarn link @nice-boys/components |
+| yarn run build:watch  | yarn run dev                    |
+
 If you want to use the remote version in your app again, simply run `yarn unlink @nice-boys/components` in the app directory.
 
 ### Publishing a new version
