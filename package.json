@@ -1,0 +1,35 @@
+{
+  "name": "@nice-boys/components",
+  "version": "0.0.0",
+  "description": "Nice Boys component library",
+  "source": "src/index.ts",
+  "main": "dist/nice-boys-components.cjs.js",
+  "module": "dist/nice-boys-components.mjs",
+  "umd:main": "dist/nice-boys-components.umd.js",
+  "repository": "https://github.com/nice-boys/components",
+  "author": "Max Stoiber",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "microbundle watch --jsx react",
+    "build": "microbundle --jsx react",
+    "prepublishOnly": "yarn run build"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,css,json,md,mdx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.19",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "microbundle": "^0.11.0",
+    "prettier": "^1.17.1",
+    "react": "^16.8.6"
+  }
+}
