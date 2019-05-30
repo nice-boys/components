@@ -3,3 +3,4 @@ node_modules
 .vscode
 dist
 .rts2_cache_*
+.storybook-dist
