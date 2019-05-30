@@ -1,6 +1,6 @@
 {
   "name": "@nice-boys/components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Nice Boys component library",
   "source": "src/index.ts",
   "main": "dist/nice-boys-components.cjs.js",
