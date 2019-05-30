@@ -9,5 +9,8 @@
       "use": "@now/static-build",
       "config": { "distDir": ".storybook-dist" }
     }
-  ]
+  ],
+  "github": {
+    "silent": true
+  }
 }
