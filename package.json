@@ -14,6 +14,7 @@
     "dev": "start-storybook -p 6006",
     "build:watch": "microbundle watch --jsx react",
     "build": "microbundle --jsx react",
+    "lint": "eslint src --ext .js,.ts,.tsx",
     "now-build": "build-storybook -c .storybook -o .storybook-dist",
     "prepublishOnly": "yarn run build"
   },
@@ -22,8 +23,39 @@
       "pre-commit": "lint-staged"
     }
   },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier",
+      "prettier/@typescript-eslint",
+      "react-app"
+    ],
+    "plugins": [
+      "react-hooks",
+      "clean-styled-components"
+    ],
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": 0,
+      "@typescript-eslint/explicit-member-accessibility": 0,
+      "@typescript-eslint/no-empty-interface": 0,
+      "@typescript-eslint/no-var-requires": 0,
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "clean-styled-components/single-component-per-file": 2
+    }
+  },
   "lint-staged": {
-    "*.{js,ts,tsx,css,json,md,mdx}": [
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.{css,json,md,mdx}": [
       "prettier --write",
       "git add"
     ]
@@ -40,6 +72,19 @@
     "@storybook/react": "^5.0.11",
     "@types/react": "^16.8.19",
     "@types/storybook__react": "^4.0.1",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-react-app": "^3.0.8",
+    "eslint-loader": "2.1.1",
+    "eslint-plugin-clean-styled-components": "^0.0.2",
+    "eslint-plugin-flowtype": "2.50.1",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.0",
     "babel-loader": "^8.0.6",
     "husky": "^2.3.0",
     "lint-staged": "^8.1.7",
