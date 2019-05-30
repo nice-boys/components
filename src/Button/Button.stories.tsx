@@ -1,9 +1,9 @@
 import { storiesOf } from "@storybook/react";
 import withPropsCombinations from "react-storybook-addon-props-combinations";
 import { action } from "@storybook/addon-actions";
-import { PrimaryButton, DangerButton, GhostButton } from "./";
+import { PrimaryButton, DangerButton, GhostButton, JoinButton } from "./";
 
-storiesOf("Button", module)
+storiesOf("Buttons", module)
   .add(
     "Primary",
     withPropsCombinations(PrimaryButton, {
@@ -17,6 +17,15 @@ storiesOf("Button", module)
     "Ghost",
     withPropsCombinations(GhostButton, {
       children: ["Potential click"],
+      size: ["small", undefined, "large"],
+      disabled: [true, false],
+      onClick: [action("click")]
+    })
+  )
+  .add(
+    "Join",
+    withPropsCombinations(JoinButton, {
+      children: ["Join"],
       size: ["small", undefined, "large"],
       disabled: [true, false],
       onClick: [action("click")]
