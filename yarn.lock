@@ -1079,6 +1079,13 @@
     react-inspector "^2.3.0"
     uuid "^3.3.2"
 
+"@storybook/addon-console@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-console/-/addon-console-1.1.0.tgz#ef063fa122a7aa03ac54067a1d6a72d717b41c73"
+  integrity sha512-G36/KB0uN5OB30W/QQU/NIbQ2EA4ZjJGORvYNx83bojRN2cKF0NFae5hEwlAAhKZK31qe3g3bsymWvc7+WBCpA==
+  dependencies:
+    global "^4.3.2"
+
 "@storybook/addon-info@^5.0.11":
   version "5.0.11"
   resolved "https://registry.yarnpkg.com/@storybook/addon-info/-/addon-info-5.0.11.tgz#d051fdf2b9e6c15b0bc4ef2a23200f35f1e1397d"
@@ -1112,6 +1119,39 @@
     global "^4.3.2"
     prop-types "^15.6.2"
     qs "^6.5.2"
+
+"@storybook/addon-storysource@^5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-5.0.11.tgz#cd9f1c5df1a8dfa400655ad3098dcde1006183c3"
+  integrity sha512-1hEkzQEShOO19erFUx/a8dYTFjVd6jRMKAUH4Esx+U3M9RUDMi4a/HtKuhQrpCR/l0eY0FUk7DAqFo4g5gKLmw==
+  dependencies:
+    "@storybook/addons" "5.0.11"
+    "@storybook/components" "5.0.11"
+    "@storybook/router" "5.0.11"
+    "@storybook/theming" "5.0.11"
+    core-js "^2.6.5"
+    estraverse "^4.2.0"
+    loader-utils "^1.2.1"
+    prettier "^1.16.4"
+    prop-types "^15.6.2"
+    react-syntax-highlighter "^8.0.1"
+    regenerator-runtime "^0.12.1"
+
+"@storybook/addon-viewport@^5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-5.0.11.tgz#93b1d6db2c06b7a9282ee96a9a4d1dd2c4ba8849"
+  integrity sha512-dOq+L7Crxh8B3KrdkbKhCGX466k+0x1t5/VuZjztxfVQPpjIn8L7Zxo+nYouvlbXtHaKh7Xon4bq61HPksrJAw==
+  dependencies:
+    "@storybook/addons" "5.0.11"
+    "@storybook/client-logger" "5.0.11"
+    "@storybook/components" "5.0.11"
+    "@storybook/core-events" "5.0.11"
+    "@storybook/theming" "5.0.11"
+    core-js "^2.6.5"
+    global "^4.3.2"
+    memoizerific "^1.11.3"
+    prop-types "^15.6.2"
+    util-deprecate "^1.0.2"
 
 "@storybook/addons@5.0.11", "@storybook/addons@^5.0.11":
   version "5.0.11"
@@ -4450,7 +4490,7 @@ esrecurse@^4.1.0:
   dependencies:
     estraverse "^4.1.0"
 
-estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1:
+estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1, estraverse@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.2.0.tgz#0dee3fed31fcd469618ce7342099fc1afa0bdb13"
   integrity sha1-De4/7TH81GlhjOc0IJn8GvoL2xM=
@@ -6409,7 +6449,7 @@ loader-utils@1.1.0:
     emojis-list "^2.0.0"
     json5 "^0.5.0"
 
-loader-utils@1.2.3, loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3:
+loader-utils@1.2.3, loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.1, loader-utils@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.2.3.tgz#1ff5dc6911c9f0a062531a4c04b609406108c2c7"
   integrity sha512-fkpz8ejdnEMG3s37wGL07iSBDg99O9D5yflE9RGNH3hRdx9SOwYfnGYdZOUIZitN8E+E2vkq3MUMYMvPYl5ZZA==
@@ -8487,7 +8527,7 @@ preserve@^0.2.0:
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
-prettier@^1.17.1:
+prettier@^1.16.4, prettier@^1.17.1:
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.17.1.tgz#ed64b4e93e370cb8a25b9ef7fef3e4fd1c0995db"
   integrity sha512-TzGRNvuUSmPgwivDqkZ9tM/qTGW9hqDKWOE9YHiyQdixlKbv7kvEqsmDPrcHJTKwthU774TQwZXVtaQ/mMsvjg==
