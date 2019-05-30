@@ -1577,6 +1577,15 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@types/rebass@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@types/rebass/-/rebass-3.0.4.tgz#c21ef30895d857a3bb0822084440739f448159d6"
+  integrity sha512-qTR46x+9niOIxOZJ/R0voBKes2YQb2wndC7kMLDuQ9baRB+3RO04tKF90y9jt/bEvD1gIMPaAsuKN/zqrekZOw==
+  dependencies:
+    "@types/react" "*"
+    "@types/styled-components" "*"
+    "@types/styled-system" "*"
+
 "@types/resolve@0.0.8":
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/@types/resolve/-/resolve-0.0.8.tgz#f26074d238e02659e323ce1a13d041eee280e194"
@@ -1592,7 +1601,7 @@
     "@types/react" "*"
     "@types/webpack-env" "*"
 
-"@types/styled-components@^4.1.15":
+"@types/styled-components@*", "@types/styled-components@^4.1.15":
   version "4.1.15"
   resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-4.1.15.tgz#532b6738ec633b2911e0470522c23e3c658952f2"
   integrity sha512-DMr4Kq3i5Em2K1ThlqZlC8nrsiO3VaiQS2M+7cOPnseHLtfDUrDjHx6Jv11V6uVIoK8ERYhmfn42RvSIg47rnA==
@@ -1601,7 +1610,7 @@
     "@types/react-native" "*"
     csstype "^2.2.0"
 
-"@types/styled-system@^4.2.1":
+"@types/styled-system@*", "@types/styled-system@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-4.2.1.tgz#dc03af329452b5208aba9dc56fdfc6971b9ed2d0"
   integrity sha512-4wARGJuZz1DzogmGAKhOviaDeZYfOU29ROt/XrWSFTKhTNSpMvq7WyzEUuxPRC70VH57eUB1uxsWrKYND/FgJQ==
@@ -9183,6 +9192,13 @@ readdirp@^2.2.1:
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
 
+rebass@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/rebass/-/rebass-3.1.1.tgz#b318d2f4ed1bb35532392a97e0984474f160122a"
+  integrity sha512-c/mFtt5luxoVHwsRSx5sD27DzLoEIO1gQKSal1RPsj+cf4jfkei3l00eULTm2HA0er0r8fRNZJKTE8AJVc+GRQ==
+  dependencies:
+    styled-system "^4.0.8"
+
 recast@^0.14.7:
   version "0.14.7"
   resolved "https://registry.yarnpkg.com/recast/-/recast-0.14.7.tgz#4f1497c2b5826d42a66e8e3c9d80c512983ff61d"
@@ -10376,7 +10392,7 @@ styled-normalize@^8.0.6:
   resolved "https://registry.yarnpkg.com/styled-normalize/-/styled-normalize-8.0.6.tgz#f27f87292f46aa79ad6db6339aff5db529df3c91"
   integrity sha512-tOnAD1+wV04aiVy6chaQA4u/EtkGiGZPlIBYvEfWlZQBrDqRhu9EdPyXlFzLWxpOmANoQelJqSOMlV3QNCDKkw==
 
-styled-system@^4.2.4:
+styled-system@^4.0.8, styled-system@^4.2.4:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-4.2.4.tgz#8909f91396c30b92295b4eddec5f7b89f8c8d767"
   integrity sha512-44X7n09gDvwx7yjquEXsjiNALK0dxGgAJdpO5cb/PdL+D4mhSLKWig4/EhH4vHJLbwu/kumURHyvKxygaBfg0A==

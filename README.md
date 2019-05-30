@@ -1,6 +1,20 @@
 # `@nice-boys/components`
 
-Our component library to quickly plug together products. Used in conjunction with our [product-boilerplate](https://github.com/nice-boys/product-boilerplate).
+Our React component library to quickly plug together products. Used in conjunction with our [product-boilerplate](https://github.com/nice-boys/product-boilerplate).
+
+## Documentation
+
+**[Visit the Storybook for examples of all components](https://components.nice-boys.now.sh)**
+
+This component library is based on:
+
+- [styled-components](https://styled-components.com)
+- [styled-system](https://github.com/jxnblk/styled-system)
+- [rebass](https://rebassjs.org)
+
+Recommended usage is with [rebass](https://rebassjs.org), this library does not re-export those core primitives (Flex, Box, etc).
+
+---
 
 ## Contributing
 
@@ -14,7 +28,7 @@ yarn run dev
 
 Any `.stories.js` file will be picked up by Storybook. See their doc on [how to write stories](https://storybook.js.org/docs/basics/writing-stories/) to learn more.
 
-#### Using your local version in an app
+### Using your local version in an app
 
 There are three steps to use your local version of `@nice-boys/components` in an app for development:
 
@@ -30,14 +44,6 @@ That's it!
 | yarn run build:watch  | yarn run dev                    |
 
 If you want to use the remote version in your app again, simply run `yarn unlink @nice-boys/components` in the app directory.
-
-### Publishing a new version
-
-Since this is public but also scoped, you need to pass the `--access public` flag when publishing a new version:
-
-```
-yarn publish --access public
-```
 
 ## License
 
