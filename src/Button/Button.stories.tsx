@@ -7,7 +7,8 @@ import {
   GhostButton,
   JoinButton,
   OutlineButton,
-  TabButton
+  TabButton,
+  TextButton
 } from "./";
 
 storiesOf("Buttons", module)
@@ -32,6 +33,15 @@ storiesOf("Buttons", module)
   .add(
     "Outline",
     withPropsCombinations(OutlineButton, {
+      children: ["Potential click"],
+      size: ["small", undefined, "large"],
+      disabled: [true, false],
+      onClick: [action("click")]
+    })
+  )
+  .add(
+    "Text",
+    withPropsCombinations(TextButton, {
       children: ["Potential click"],
       size: ["small", undefined, "large"],
       disabled: [true, false],
