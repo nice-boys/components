@@ -94,7 +94,8 @@
     "microbundle": "^0.11.0",
     "prettier": "^1.17.1",
     "react": "^16.8.6",
-    "react-docgen-typescript-loader": "^3.1.0"
+    "react-docgen-typescript-loader": "^3.1.0",
+    "react-storybook-addon-props-combinations": "^1.1.0"
   },
   "dependencies": {}
 }
