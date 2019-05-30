@@ -7,8 +7,8 @@ storiesOf("Button", module).add(
   "Primary",
   withPropsCombinations(PrimaryButton, {
     children: ["Click me"],
+    size: ["small", undefined, "large"],
     disabled: [true, false],
-    onClick: [action("click")],
-    size: ["small", "large", undefined]
+    onClick: [action("click")]
   })
 );
