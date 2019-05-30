@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import BaseStyles from "./";
+import { BaseStyles } from "./";
 
 storiesOf("BaseStyles", module).add("Global", () => (
   <>
