@@ -1,6 +1,8 @@
 {
   "version": 2,
-  "alias": "nice-boys-components.now.sh",
+  "name": "@nice-boys/components",
+  "alias": "components.nice-boys.now.sh",
+  "scope": "nice-boys",
   "builds": [
     {
       "src": "package.json",
