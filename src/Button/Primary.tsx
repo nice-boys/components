@@ -35,11 +35,9 @@ const Button = styled.button<ButtonProps>`
   }
 `;
 
-const PrimaryButton = (props: ButtonProps) => {
+export const PrimaryButton = (props: ButtonProps) => {
   const { size } = props;
   const { py, px } = getPaddingFromSize(size);
   const fontSize = getFontSizeFromSize(size);
   return <Button {...props} py={py} px={px} fontSize={fontSize} />;
 };
-
-export default PrimaryButton;
