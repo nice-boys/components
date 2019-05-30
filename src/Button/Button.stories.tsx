@@ -1,12 +1,14 @@
-import React from "react";
 import { storiesOf } from "@storybook/react";
 import withPropsCombinations from "react-storybook-addon-props-combinations";
-import Button from "./";
+import { action } from "@storybook/addon-actions";
+import PrimaryButton from "./Primary";
 
 storiesOf("Button", module).add(
-  "standard usage",
-  withPropsCombinations(Button, {
-    children: ["some text", "text and an emoji 👏"],
-    disabled: [true, false]
+  "Primary",
+  withPropsCombinations(PrimaryButton, {
+    children: ["Click me"],
+    disabled: [true, false],
+    onClick: [action("click")],
+    size: ["small", "large", undefined]
   })
 );

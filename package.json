@@ -36,8 +36,7 @@
       "react-app"
     ],
     "plugins": [
-      "react-hooks",
-      "clean-styled-components"
+      "react-hooks"
     ],
     "rules": {
       "@typescript-eslint/explicit-function-return-type": 0,
@@ -45,8 +44,7 @@
       "@typescript-eslint/no-empty-interface": 0,
       "@typescript-eslint/no-var-requires": 0,
       "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-      "clean-styled-components/single-component-per-file": 2
+      "react-hooks/exhaustive-deps": "warn"
     }
   },
   "lint-staged": {
@@ -61,7 +59,8 @@
     ]
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "styled-components": "4.x.x"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -75,6 +74,8 @@
     "@storybook/react": "^5.0.11",
     "@types/react": "^16.8.19",
     "@types/storybook__react": "^4.0.1",
+    "@types/styled-components": "^4.1.15",
+    "@types/styled-system": "^4.2.1",
     "@typescript-eslint/eslint-plugin": "^1.6.0",
     "@typescript-eslint/parser": "^1.6.0",
     "babel-eslint": "^10.0.1",
@@ -83,7 +84,6 @@
     "eslint-config-prettier": "^4.1.0",
     "eslint-config-react-app": "^3.0.8",
     "eslint-loader": "2.1.1",
-    "eslint-plugin-clean-styled-components": "^0.0.2",
     "eslint-plugin-flowtype": "2.50.1",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
@@ -95,7 +95,10 @@
     "prettier": "^1.17.1",
     "react": "^16.8.6",
     "react-docgen-typescript-loader": "^3.1.0",
-    "react-storybook-addon-props-combinations": "^1.1.0"
+    "react-storybook-addon-props-combinations": "^1.1.0",
+    "styled-components": "^4.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "styled-system": "^4.2.4"
+  }
 }
