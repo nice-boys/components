@@ -1,10 +1,9 @@
 {
   "name": "@nice-boys/components",
-  "version": "0.0.3",
+  "version": "0.0.4-canary.1",
   "description": "Nice Boys component library",
   "source": "src/index.ts",
   "main": "dist/nice-boys-components.cjs.js",
-  "module": "dist/nice-boys-components.mjs",
   "umd:main": "dist/nice-boys-components.umd.js",
   "repository": "https://github.com/nice-boys/components",
   "author": "Max Stoiber",
