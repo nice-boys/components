@@ -1,9 +1,9 @@
 {
   "name": "@nice-boys/components",
-  "version": "0.0.4-canary.2",
+  "version": "0.0.4-canary.3",
   "description": "Nice Boys component library",
   "source": "src/index.ts",
-  "main": "dist/nice-boys-components.cjs.js",
+  "main": "dist/nice-boys-components.js",
   "umd:main": "dist/nice-boys-components.umd.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/nice-boys/components",
