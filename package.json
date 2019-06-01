@@ -12,8 +12,8 @@
   "private": false,
   "scripts": {
     "dev": "start-storybook -p 6006",
-    "build:watch": "microbundle watch --jsx react",
-    "build": "microbundle --jsx react",
+    "build:watch": "microbundle watch --jsx React.createElement",
+    "build": "microbundle --jsx React.createElement",
     "lint": "eslint src --ext .js,.ts,.tsx",
     "now-build": "build-storybook -c .storybook -o .storybook-dist",
     "prepublishOnly": "yarn run build"
