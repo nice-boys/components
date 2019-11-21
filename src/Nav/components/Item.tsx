@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Box, LinkProps, Flex } from "rebass";
 import { theme } from "../../theme";
-import { defaultBreakpoints } from "styled-system";
+import { defaultBreakpoints, FlexProps } from "styled-system";
 import { ChevronRight } from "react-feather";
 
 const Mobile = styled(Box)`
@@ -58,10 +58,12 @@ const Link = styled(Flex).attrs(props => ({
 
 export const Item = (props: LinkProps) => {
   return (
+    // @ts-ignore
     <Link
       justifyContent={["space-between", "initial"]}
       alignItems="center"
       {...props}
+      ref={undefined}
     >
       {props.children}
       <Mobile style={{ height: "1em" }}>

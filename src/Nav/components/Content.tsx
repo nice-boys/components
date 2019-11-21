@@ -5,14 +5,14 @@ import { defaultBreakpoints } from "styled-system";
 import { ChevronDown } from "react-feather";
 import { theme } from "../../theme";
 
-const Mobile = styled(Flex)`
+const Mobile = styled(Flex)<FlexProps>`
   display: none;
   @media screen and (max-width: ${defaultBreakpoints[0]}) {
     display: flex;
   }
 `;
 
-const Desktop = styled(Flex)`
+const Desktop = styled(Flex)<FlexProps>`
   @media screen and (max-width: ${defaultBreakpoints[0]}) {
     display: none;
   }
@@ -52,11 +52,12 @@ export const Content = (props: FlexProps) => {
         justifyContent="space-between"
         width={1}
         {...props}
+        ref={undefined}
       />
       <Mobile
         flexDirection="row"
         justifyContent="flex-end"
-        alignitems="center"
+        alignItems="center"
         width={1}
       >
         <UnstyledButton onClick={() => setIsOpen(!isOpen)}>

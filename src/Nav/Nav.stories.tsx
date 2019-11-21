@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, Box } from "rebass";
-import { storiesOf, addDecorator } from "@storybook/react";
+import { storiesOf } from "@storybook/react";
 import { Nav } from "./Nav";
 import { PrimaryButton } from "../Button";
 
