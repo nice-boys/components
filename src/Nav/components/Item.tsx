@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Box, LinkProps, Flex } from "rebass";
 import { theme } from "../../theme";
-import { defaultBreakpoints, FlexProps } from "styled-system";
+import { defaultBreakpoints } from "styled-system";
 import { ChevronRight } from "react-feather";
 
 const Mobile = styled(Box)`
