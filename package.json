@@ -101,6 +101,7 @@
   },
   "dependencies": {
     "@tippy.js/react": "^2.2.0",
+    "react-feather": "^2.0.3",
     "rebass": "^3.x.x",
     "styled-normalize": "^8.x.x",
     "styled-system": "^4.x.x"
