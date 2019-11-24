@@ -15,6 +15,7 @@
     "build:watch": "microbundle watch --jsx React.createElement",
     "build": "microbundle --jsx React.createElement",
     "lint": "eslint src --ext .js,.ts,.tsx",
+    "test": "yarn run lint",
     "now-build": "build-storybook -c .storybook -o .storybook-dist",
     "prepublishOnly": "yarn run build"
   },
