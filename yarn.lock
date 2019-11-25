@@ -1732,14 +1732,15 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/rebass@^3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@types/rebass/-/rebass-3.0.4.tgz#c21ef30895d857a3bb0822084440739f448159d6"
-  integrity sha512-qTR46x+9niOIxOZJ/R0voBKes2YQb2wndC7kMLDuQ9baRB+3RO04tKF90y9jt/bEvD1gIMPaAsuKN/zqrekZOw==
+"@types/rebass@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@types/rebass/-/rebass-4.0.3.tgz#cb55b73395ae87e0c2c0c0292c95d9f8e7a2ca27"
+  integrity sha512-dUZMb8IOqSesn1bQHLeIMIAHTaYcuQ9hTn9b2/Vj9AEcjRIBYnOfQlTshXWcf+GAYTWYxK4fb9qjkoQ3GyG52w==
   dependencies:
     "@types/react" "*"
     "@types/styled-components" "*"
     "@types/styled-system" "*"
+    "@types/styled-system__css" "*"
 
 "@types/resolve@0.0.8":
   version "0.0.8"
@@ -1756,16 +1757,7 @@
     "@types/react" "*"
     "@types/webpack-env" "*"
 
-"@types/styled-components@*":
-  version "4.1.15"
-  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-4.1.15.tgz#532b6738ec633b2911e0470522c23e3c658952f2"
-  integrity sha512-DMr4Kq3i5Em2K1ThlqZlC8nrsiO3VaiQS2M+7cOPnseHLtfDUrDjHx6Jv11V6uVIoK8ERYhmfn42RvSIg47rnA==
-  dependencies:
-    "@types/react" "*"
-    "@types/react-native" "*"
-    csstype "^2.2.0"
-
-"@types/styled-components@^4.4.0":
+"@types/styled-components@*", "@types/styled-components@^4.4.0":
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-4.4.0.tgz#15a3d59533fd3a5bd013db4a7c4422ec542c59d2"
   integrity sha512-QFl+w3hQJNHE64Or3PXMFpC3HAQDiuQLi5o9m1XPEwYWfgCZtAribO5ksjxnO8U0LG8Parh0ESCgVxo4VfxlHg==
@@ -1780,6 +1772,13 @@
   integrity sha512-4wARGJuZz1DzogmGAKhOviaDeZYfOU29ROt/XrWSFTKhTNSpMvq7WyzEUuxPRC70VH57eUB1uxsWrKYND/FgJQ==
   dependencies:
     csstype "^2.6.4"
+
+"@types/styled-system__css@*":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.4.tgz#df83b015cf377ab39ecf33ea31339c05eeb9230a"
+  integrity sha512-SHHoNh9cCRTG9hcmCD2ua0NeYUrLmLXoMJ7g0U/e0FjrzcwNQtM5wjjEJVCVZymU632xA1PdPEykrtoSHTIecA==
+  dependencies:
+    csstype "^2.6.6"
 
 "@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2":
   version "2.0.3"
@@ -4071,6 +4070,11 @@ csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.4:
   version "2.6.5"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.5.tgz#1cd1dff742ebf4d7c991470ae71e12bb6751e034"
   integrity sha512-JsTaiksRsel5n7XwqPAfB0l3TFKdpjW/kgAELf9vrb5adGA7UCPLajKK5s3nFrcFm3Rkyp/Qkgl73ENc1UY3cA==
+
+csstype@^2.6.6:
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.7.tgz#20b0024c20b6718f4eda3853a1f5a1cce7f5e4a5"
+  integrity sha512-9Mcn9sFbGBAdmimWb2gLVDtFJzeKtDGIr76TUqmjZrw9LFXBMSU70lcs+C0/7fyCd6iBDqmksUcCOUIkisPHsQ==
 
 cyclist@~0.2.2:
   version "0.2.2"
