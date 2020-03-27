@@ -1725,9 +1725,9 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^16.8.19":
-  version "16.8.19"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.19.tgz#629154ef05e2e1985cdde94477deefd823ad9be3"
-  integrity sha512-QzEzjrd1zFzY9cDlbIiFvdr+YUmefuuRYrPxmkwG0UQv5XF35gFIi7a95m1bNVcFU0VimxSZ5QVGSiBmlggQXQ==
+  version "16.9.26"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.26.tgz#1e55803e468f5393413e29033538cc9aaed6cec9"
+  integrity sha512-dGuSM+B0Pq1MKXYUMlUQWeS6Jj9IhSAUf9v8Ikaimj+YhkBcQrihWBkmyEhK/1fzkJTwZQkhZp5YhmWa2CH+Rw==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
